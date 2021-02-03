@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+     crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"></script>
+    <title>Adiong</title>
+</head>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Admin</h1>
+                <input type="text" placeholder="First Name" required/>
+                <input type="text" placeholder="Middle Name" required/>
+                <input type="text" placeholder="Last Name" required/>
+                <input type="number" placeholder="Mobile Number" required/>
+                <input type="password" id="password" placeholder="Password" required/>
+                <div class="checkbox">
+                    <input type="checkbox" onclick="myFunction()">Show Password
+               </div>
+                <a href="log-in.html">Already have an account? Click Here</a>
+                <input type="submit" class="btnRegister" value="Register">
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Student</h1>
+                <input type="text" placeholder="First Name *" required/>
+                <input type="text" placeholder="Middle Name *" required/>
+                <input type="text" placeholder="Last Name *" required/>
+                <input type="number" placeholder="Guardian/Parent's Cell Number *" required/>
+                <select required>
+                    <option value="" disabled selected hidden>Grade Level</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                <input type="password" id="Password" placeholder="Password" required/>
+                <div class="checkbox">
+                    <input type="checkbox" onclick="show()">Show Password
+               </div>
+               
+                <a href="log-in.html">Already have an account? Click Here</a>
+                
+                    <input type="submit" class="btnRegister" value="Register"></input>
+                    
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <img src="/img/adiong.gif" id="adiong" alt=""/>
+                    <h1>Welcome to</h1>
+                    <p>Adiong Memorial College Foundation Inc.</p>
+                    <button class="ghost" id="signIn">Register as a Student</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <img src="/img/adiong.gif" id="adiong" alt=""/>
+                    <h1>Welcome to</h1>
+                    <p>Adiong Memorial College Foundation Inc.</p>
+                    <button class="ghost" id="signUp">register as an Admin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+      <script src="/javascript/auth.js"></script>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+            crossorigin="anonymous"></script>
+</body>
+</html>
